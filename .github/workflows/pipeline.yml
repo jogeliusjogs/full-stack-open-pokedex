@@ -39,3 +39,4 @@ jobs:
           heroku_email: "jokke.ryynanen@gmail.com"
           healthcheck: "https://glacial-savannah-77090.herokuapp.com/version"
           checkstring: "1"
+          rollbackonhealthcheckfailed: true
