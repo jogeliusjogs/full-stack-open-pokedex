@@ -20,6 +20,7 @@ module.exports = {
   "plugins": [
     "react", "jest", "cypress"
   ],
+  "ignorePatterns": ["cypress/**"],
   "rules": {
     "indent": [
       "error",
@@ -47,6 +48,5 @@ module.exports = {
     ],
     "no-console": "error",
     "react/prop-types": 0,
-    "ignorePatterns": ["cypress/**"]
   }
 }
