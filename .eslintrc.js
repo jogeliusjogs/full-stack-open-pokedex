@@ -3,7 +3,8 @@ module.exports = {
     "node": true,
     "browser": true,
     "es6": true,
-    "jest/globals": true
+    "jest/globals": true,
+    "cypress/globals": true
   },
   "extends": [
     "eslint:recommended",
@@ -45,9 +46,6 @@ module.exports = {
       "error", { "before": true, "after": true }
     ],
     "no-console": "error",
-    "react/prop-types": 0,
-    "globals": {
-      "cy": true
-    }
+    "react/prop-types": 0
   }
 }
