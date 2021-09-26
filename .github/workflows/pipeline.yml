@@ -27,11 +27,11 @@ jobs:
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5000
-      -name: heroku deployment
-        - uses: akhileshns/heroku-deploy@v3.12.12
-          with:
-            heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-            heroku_app_name: "glacial-savannah-77090"
-            heroku_email: "jokke.ryynanen@gmail.com"
-            healthcheck: "https://glacial-savannah-77090.herokuapp.com/version"
-            checkstring: "1"
+      - name: heroku deployment
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "glacial-savannah-77090"
+          heroku_email: "jokke.ryynanen@gmail.com"
+          healthcheck: "https://glacial-savannah-77090.herokuapp.com/version"
+          checkstring: "1"
