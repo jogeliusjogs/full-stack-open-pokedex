@@ -1,1 +1,1 @@
-web: node app.jsssdfafsa
+web: node app.js
